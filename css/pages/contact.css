@@ -1,0 +1,606 @@
+/* Start Global Rules */
+a,
+button,
+input,
+h2,
+span{
+    transition: all 0.33s ease;
+    -webkit-transition: all 0.33s ease;
+    -moz-transition: all 0.33s ease;
+    -o-transition: all 0.33s ease;
+    -ms-transition: all 0.33s ease;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* End Global Rules */
+
+/* Start nav All*/
+.nav-all{
+    position: relative
+}
+/* Start NavBar Top*/
+.top-nav{
+    background-color: #272727;
+    color: #FFF;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.top-nav p{
+    display: inline-block;
+    padding: 10px 0
+}
+.top-nav .social-icon{
+    margin-top: 15px
+}
+.top-nav .social-icon li{
+    margin-left: 10px;
+    display: inline-block;
+}
+.top-nav .social-icon li a{
+    color: #fff
+}
+.top-nav .social-icon li a:hover{
+    color: #f9b707
+}
+.top-nav .top-navbar-header .top-collapsed-navtop{display: none}
+.top-nav .top-navbar-header .top-collapsed-navtop:focus{
+        outline: none;
+}
+.top-nav .top-collapsed-navtop >span{
+    display: block
+}
+/* End NavBar Top*/
+
+/* Start Navbar */
+
+.nav-all .navbar-inverse{
+    margin-bottom: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: #272727 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #FFF;
+    margin-top: 10px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    line-height: 1.28;
+    font-weight: 400;
+}
+.navbar-inverse .navbar-nav>li>a:hover{color: #f9b707}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    color: #f9b707;
+}
+
+.navbar .dropdown-menu{
+    background-color: #000;
+    border: none;
+    box-shadow: none
+}
+.navbar .dropdown-menu>li>a{color: #fff;}
+.navbar .dropdown-menu>li>a:hover{background-color: #f9b707}
+.navbar-nav .dropdown>a span{margin-left: 10px}
+/****navbar-toggle*****/
+.navbar-inverse .navbar-toggle{
+    position: relative;
+    float: left;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form{
+    border: none !important
+}
+.navbar-right{
+    margin-top: 20px;
+}
+.navbar-right i{
+    color: #fff;
+    cursor: pointer
+}
+
+/*Start Input search event Click Icon Search*/
+.nav-all .search-input{
+    height: 70px;
+    width: 100%;
+    background: #272727;
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+.nav-all .search-input input{
+   background: transparent;
+    border: 0;
+    padding: 10px 30px;
+    width: 75%;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-all .search-input input:focus{
+        outline: none;
+}
+.nav-all .search-input .search-btn{
+    color: #FFF;
+    width: 20%;
+    display: inline-block;
+    margin-top: 15px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+.nav-all .search-input .search-btn button{
+    background: #272727;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer
+}
+.nav-all .search-input .search-btn i{
+    cursor: pointer;
+}
+.nav-all .search-input .search-btn i:hover{
+    color: #f9b707
+}
+
+/* Li Searsh In media Max Width 1200px in list navbar*/
+.navbar .nav li.search-li{
+    background-color: #333;
+    padding: 0;
+}
+.navbar .nav li.search-li .form-group{
+    width: 80%;
+    background-color: transparent;
+    display: inline-block;
+}
+.navbar .nav li.search-li input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    box-shadow: none;
+    padding: 6px 20px;
+}
+.navbar .nav li.search-li input:focus{
+        outline: none;
+}
+.navbar .nav li.search-li button{
+    background-color: transparent;
+    color: #CCC;
+    float: right;
+    padding: 0 5px;
+}
+/*****Start Media Header*****/
+@media (min-width: 1200px){
+    .navbar-inverse .navbar-brand{
+        margin-right: 40px;
+    }
+    .margin-lg{
+        margin-bottom: 20px;
+        margin-top: 20px
+    }
+}
+@media (max-width: 1200px) {
+    /*navbar top*/
+    .top-nav{
+        border: none
+    }
+    .top-nav .top-collapse{
+        display: none;
+        margin-top: 50px
+    }
+    .top-nav .top-collapse .adress,
+    .top-nav .top-collapse .social-icon{
+        float: right
+    }
+    .top-nav .top-navbar-header{
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 36px;
+         z-index: 4;
+    }
+    .top-nav .top-navbar-header .top-collapsed-navtop{
+        display: block;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 10px;
+    }
+    .top-nav .top-navbar-header .top-collapsed-navtop:hover,
+    .top-nav .top-navbar-header .top-collapsed-navtop:focus{
+        color: #f9b707;
+    }
+    
+    /*nav bar*/
+    .nav-all .navbar-inverse{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+    }
+    .navbar-inverse .navbar-inner{
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
+    /* Trigger bootstrap navbar collapse pada viewport <= 1200px */
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        background-color: #272727 !important;
+        position: absolute;
+        width: 50%;
+        left: 0;
+        margin-top: 0;
+        
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>.active>a{
+        background-color: #f9b707 !important;
+        color: #FFF !important
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media(min-width:992px)and (max-width:1200px){
+    
+    .navbar .navbar-brand{
+           max-width: 250px;
+            overflow: hidden;
+    }
+    .navbar .nav li.search-li .form-group{
+        padding: 10px;
+    }
+    .navbar .nav li.search-li button{
+        padding-top: 10px
+    }
+}
+@media(max-width: 991px){
+    .navbar .navbar-brand{
+        width: 250px;
+        overflow: hidden;
+    }
+        .navbar-form{
+            padding: 10px 15px;
+    }
+}
+@media (max-width: 768px){
+    .navbar-nav{
+        left: 14px;
+        overflow: hidden
+    }
+}
+@media(max-width: 480px) {
+    .navbar-nav{
+        width: 90%
+    }
+}
+/*End Nav all*/
+
+/*Start Map Section*/
+#map{
+    widows: 100%;
+    height: 100vh
+}
+/*En Map Section*/
+
+/*Start contact*/
+.contact{
+    padding: 80px 0;
+}
+.contact .info{
+    margin-bottom: 30px;
+}
+.contact .info .h1,
+.contact .contact-form .h1{
+    margin-bottom: 30px;
+}
+.contact .info .h1:before,
+.contact .contact-form .h1:before{
+    margin: 25px 0;
+}
+.contact .info ul.desk{}
+.contact .info ul.desk li{
+    margin-bottom: 20px
+}
+.contact .info ul.desk h4{
+    display: inline-block;
+    font-size: 20px;
+    color: #000;
+    margin-right: 10px;
+}
+.contact .info ul.desk p{
+     display: inline-block;
+    color: #888
+}
+
+.contact ul.social-icon li{
+    margin-left: 10px;
+    display: inline-block;
+}
+.contact ul.social-icon li a{
+    color: #f9b707
+}
+.contact ul.social-icon .fa-facebook:hover{
+    color: #3b5998
+}
+.contact ul.social-icon .fa-twitter:hover{
+    color: #1da1f2
+}
+.contact ul.social-icon .fa-google-plus:hover{
+    color: #dd4b39
+}
+.contact ul.social-icon .fa-pinterest-p:hover{
+    color: #bd081c
+}
+.contact ul.social-icon .fa-instagram:hover{
+    color: #405de6
+}
+.contact ul.social-icon .fa-youtube:hover {
+    color: #FF1F25;
+}
+.contact ul.social-icon .fa-vimeo:hover {
+    color: #83DAEB;
+}
+.contact .contact-form{
+    margin-bottom: 30px
+}
+.contact .contact-form ul{}
+.contact .contact-form ul li{
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    color: #C7C7C7;
+    font-style: italic
+
+}
+.click{
+    background-color: #FFF !important;
+    border: 1px solid #888
+}
+.contact .contact-form ul li i{
+    margin-left: 10px;
+    color: #C7C7C7;
+}
+.contact .contact-form ul li input,
+.contact .contact-form ul li textarea{
+    width: 90%;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    background-color: transparent
+}
+.contact .contact-form ul li.textarea{
+    position: relative;
+    margin-bottom: 30px;
+}
+.contact .contact-form ul li.textarea i{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+.contact .contact-form ul li textarea{
+    min-height: 100px;
+    width: 100%;
+    padding-left: 40px;
+}
+.contact .contact-form button{
+    color: #FFF;
+    padding: 15px 40px;
+    margin-top: 20px;
+}
+.contact .contact-form button:hover{
+    background-color: #000
+}
+/*End contact*/
+
+/*Start Footer*/
+.footer{
+    color: #888;
+    background-color: #333;
+    padding-top: 80px
+}
+
+.footer .foot-info p{
+    color: #888;
+    line-height: 1.6;
+    margin-top: 40px;
+    word-spacing: 4px;
+}
+/* Footer Navigation*/
+.footer .foot-nav h2{
+    color: #FFF;
+    margin-top: 0
+}
+.footer .foot-nav ul{
+    margin-top: 40px 
+}
+.footer .foot-nav li{margin-bottom: 20px}
+.footer .foot-nav li a:hover{
+    text-decoration: none;
+    color: #fff
+}
+/*Recent Comments*/
+.footer .foot-recent h2{
+    margin-top: 0;
+    color: #FFF
+}
+.footer .foot-recent ul{
+    margin-top: 40px
+}
+.footer .foot-recent ul li{
+    margin-bottom: 20px
+}
+.footer .foot-recent ul li span{
+    color: #888;
+}
+.footer .foot-recent ul li p{
+    margin-top: 10px
+}
+.footer .foot-recent ul li p a{
+    color: #FFF
+}
+.footer .foot-recent ul li p a:hover{
+    text-decoration: none;
+    color: #f9b707
+}
+/*Contact*/
+.footer .foot-contact h2{
+    margin-top: 0;
+    color: #FFF
+}
+.footer .foot-contact ul{
+    margin-top: 40px
+}
+.footer .foot-contact ul li{
+    margin-bottom: 20px
+}
+.footer .foot-contact li{
+    color: #888;
+}
+.footer .foot-contact a{
+    color: #888;
+    margin-right: 5px
+}
+.footer .foot-contact a:hover{
+    text-decoration: none;
+    color: #f9b707
+}
+.footer .foot-contact ul a.foot-email{
+    color: #f9b707
+}
+.footer .foot-contact ul a.foot-email:hover{
+    color: #fff
+}
+
+/*Copy Right*/
+.footer .copy{
+    background-color: #272727;
+    padding: 20px 0
+}
+.footer .copy .copyright{
+    font-size: 18px;
+    float: left
+}
+.footer .copy .social{
+    float: right;
+    margin-right: 50px;
+}
+.footer .copy ul.social-icon{}
+.footer .copy ul.social-icon li{
+    margin-left: 10px;
+    display: inline-block;
+}
+.footer .copy ul.social-icon li a{
+    color: #fff
+}
+.footer .copy ul.social-icon li a:hover{
+    color: #f9b707
+}
+/*media copy*/
+@media(max-width: 991px){
+    .footer .copy .copyright{
+        float: none;
+        margin-bottom: 20px
+    }
+    .footer .copy .social{
+        float: none
+    }
+    
+}
+/*End Footer*/
+
+/*Start Button Scroll To Top*/
+#scroll{
+    width: 70px;
+    height: 70px;
+    line-height: 105px;
+    border-radius: 100% 0% 0% 0%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    display: none;
+    cursor: pointer;
+}
+#scroll:hover{background-color: #000}
+#scroll i{
+    color: #fff;
+    margin-right: 20px;
+}
+/*End Button Scroll To Top*/
+
+
+
+
+
+
+
+
+/* Start Framework */
+button,
+a,
+.btn,
+.btn-lg{
+    border-radius: 2px !important;
+}
+.head-border:before{
+    content: '';
+    display: block;
+    width: 113px;
+    height: 3px;
+    margin: 25px auto;
+    background-color: #f9b707;   
+}
+.main-color-back{
+   background-color: #f9b707
+}
+.main-color{
+    color: #f9b707
+}
+@media (max-width: 991px){
+    .text-center-xs{
+        text-align: center
+    }
+}
+/* End Framework */
